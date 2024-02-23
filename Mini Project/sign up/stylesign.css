@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'script';
+  src: url(./font/DancingScript-VariableFont_wght.ttf);
+}
+body{
+  font-family: "Roboto", sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      background-image: url('../img/pexels-ella-olsson-1640773.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+  }
+  .container{
+      display: grid;
+      grid-template-columns: 60% 30%;
+      background-color: #BAB3AD;
+      width: 70%;
+      height: 600px;
+      margin-top: 27px;
+      border-radius: 27px;
+      background: rgba(186, 179, 173, 0.85);
+    }
+  .form{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+  .form h2{
+    text-align: center;
+  }
+  .container .logo img{
+      width: 150px;
+  }
+  .container .logo{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+  }
+  .imgs{
+    display: flex;
+    justify-content: center;
+    margin-left: 98px;
+  }
+  .imgs img{
+    width: 400px;
+    border-radius: 0 27px 27px 0;
+  }
+  .form .form-group {
+    margin-bottom: 20px;
+  }
+  #text-form{
+    display: flex;
+  }
+  .checkbox{
+    display: flex;
+    justify-content: space-between;
+  }
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 8px;
+    display: flex;
+    font-size: 16px;
+    width: 300px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    background-color:#4F1809;
+    color: white;
+    border: none;
+    border-radius: 94px;
+    cursor: pointer;
+    padding: 10px;
+    width: 150px;
+    text-transform: uppercase;
+    margin-right: 20px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: red;
+  }
+  .container .icon{
+    width: 30px;
+    margin-top: 10px;
+    padding: 5px;
+  }
+  @media (max-width:768px) {
+    .container{
+      grid-template-columns: auto;
+    }
+    .imgs{
+      display: none;
+    }
+  }
+  .input-group {
+    position: relative;
+    width: 320px; /* Adjust the width as needed */
+    margin: 5px;
+}
+
+.input-group-icon {
+    position: absolute;
+    left: 10px; /* Adjust the distance of the icon from the left */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.form-control.with-icon {
+    border: 1px solid #ced4da; /* Border color of the input field */
+    padding-left: 30px; /* Adjust the padding to make space for the icon */
+}
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  border-radius: 10px; /* Adjust the border-radius value as needed */
+}
+.acc-icon{
+  font-size: 15px;
+  margin: 10px;
+}
+.acc-icon i {
+  padding: 13px;
+  border-radius: 50px;
+  box-shadow: 0 0 0 0.5px black;
+  margin: 5px;
+}
+.acc-icon i:hover{
+  background-color: whitesmoke;
+}
